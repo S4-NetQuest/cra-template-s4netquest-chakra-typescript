@@ -1,0 +1,82 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "jest"
+  ],
+  "rules": {
+    // we don't necessarily care about lf vs crlf as we are nearly always on windows
+    "linebreak-style": "off",
+    // why is this rule still enforced? It's deprecated
+    "jsx-a11y/no-onchange": "off",
+    // max length is a very subjective rule so we've bumped up the max length and set only to warn
+    // please feel free to override on a per-file or per-line basis if it looks good
+    // I TURNED IT OFF AGAIN BECAUSE IT ANNOYS ME - Jay
+    "max-len": "off",
+    // the don't reassign parameters rule doesn't play well with .reduce()
+    // if you experience an issue, use "accum" as the first parameter name and this rule will be ignored
+    // or override the rule on a per-line basis
+    "no-param-reassign": [
+      "error",
+      {
+        "ignorePropertyModificationsFor": ["accum"]
+      }
+    ],
+    // this rule was too restrictive when dealing with nested json objects and arrays
+    "react/forbid-prop-types": [
+      "warn",
+      {
+        "forbid": ["all"]
+      }
+    ],
+    // this rule makes for some unusual and undesirable formatting
+    "react/jsx-one-expression-per-line": "off",
+    // don't tell me how to define my functions (use arrow functions nearly always)
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    // react no longer needs to be imported in every jsx file
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "ignorePatterns": ["node_modules", "tsconfig.json"]
+}

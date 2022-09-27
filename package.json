@@ -1,0 +1,29 @@
+{
+  "name": "cra-template-s4netquest-chakra-typescript",
+  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "s4",
+    "netquest",
+    "chakra"
+  ],
+  "description": "S4 NetQuest CRA template. Absolute imports, Chakra UI, Typescript, Recoil, and our preferred directory structure.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S4-NetQuest/cra-template-s4netquest-chakra-typescript.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/S4-NetQuest/cra-template-s4netquest-chakra-typescript/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "package": {
+    "dependencies": {
+      "@chakra-ui/icons": "latest",
+      "@chakra-ui/react": "latest",
+      "@chakra-ui/theme-tools": "latest",
+      "@emotion/react": "latest",
+      "@emotion/styled": "latest",
+      "@testing-library/jest-dom": "latest",
+      "@testing-library/react": "latest",
+      "@testing-library/user-event": "latest",
+      "@types/jest": "latest",
+      "@types/node": "latest",
+      "@types/react-dom": "latest",
+      "@types/react": "latest",
+      "@typescript-eslint/eslint-plugin": "latest",
+      "@typescript-eslint/parser": "latest",
+      "env-cmd": "latest",
+      "eslint-config-airbnb-typescript": "latest",
+      "eslint-config-airbnb": "latest",
+      "eslint-import-resolver-typescript": "latest",
+      "eslint-plugin-import": "latest",
+      "eslint-plugin-jest": "latest",
+      "eslint-plugin-jsx-a11y": "latest",
+      "eslint-plugin-react-hooks": "latest",
+      "eslint-plugin-react": "latest",
+      "eslint": "latest",
+      "framer-motion": "latest",
+      "react-app-polyfill": "latest",
+      "react-helmet-async": "latest",
+      "react-icons": "latest",
+      "react-router-dom": "latest",
+      "recoil": "latest",
+      "typescript": "latest",
+      "web-vitals": "latest"
+    },
+    "scripts": {
+      "start": "env-cmd -e default,development react-scripts start",
+      "build:stage": "env-cmd -e default,staging react-scripts build",
+      "build": "env-cmd -e default,production react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "lint": "eslint ."
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+}
